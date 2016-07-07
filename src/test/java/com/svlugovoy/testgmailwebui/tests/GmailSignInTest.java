@@ -25,7 +25,7 @@ public class GmailSignInTest {
         SignInPage signInPage = WebUtil.goToSignInPage(driver);
         signInPage.fillUserName(driver, "petrovpetr120@gmail.com");
         signInPage.clickNextButton(driver);
-        signInPage.fillPassword(driver, "qwertypassword");
+        signInPage.fillPassword(driver, "qwertypasswordW");
 
         EmailHomePage emailHomePage = signInPage.clickSignIn(driver);
         Assert.assertTrue("Inbox should exist", emailHomePage.isInboxExist(driver));
